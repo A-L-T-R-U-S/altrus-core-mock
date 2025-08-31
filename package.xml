@@ -1,0 +1,17 @@
+<package format="3">
+  <name>altrus_mock_middleware</name>
+  <version>0.0.1</version>
+  <description>Mock middleware for testing intents and fault manager in ROS2</description>
+  <maintainer email="you@example.com">Vihanga</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+<exec_depend>rclpy</exec_depend>
+<exec_depend>std_msgs</exec_depend>
+<exec_depend>pyyaml</exec_depend>
+<exec_depend>ament_index_python</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
