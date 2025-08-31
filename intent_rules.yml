@@ -1,0 +1,19 @@
+intents:
+  play_meditation:
+    command: music.play
+    target: music
+    required_resources: [speaker]
+    priority: 2
+    execution_policy: immediate
+  move:
+    command: locomotion.move
+    target: locomotion
+    required_resources: [wheels, lidar]
+    priority: 5
+    execution_policy: immediate
+  dispense_medicine:
+    command: telemedicine.dispense
+    target: telemedicine
+    required_resources: [dispenser, stabilizer]
+    priority: 9
+    execution_policy: preempt
