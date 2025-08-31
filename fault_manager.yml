@@ -1,0 +1,16 @@
+resources:
+  wheels:
+    check_topic: /hardware/wheels/heartbeat
+    recovery: [restart_driver, reset_motor_controller]
+  lidar:
+    check_topic: /hardware/lidar/self_test
+    recovery: [restart_node, switch_backup_lidar]
+  speaker:
+    check_topic: /hardware/speaker/heartbeat
+    recovery: [restart_audio_service]
+  dispenser:
+    check_topic: /hardware/dispenser/heartbeat
+    recovery: [dispense_reset, notify_operator]
+  stabilizer:
+    check_topic: /hardware/stabilizer/heartbeat
+    recovery: [stabilizer_recalibrate]
